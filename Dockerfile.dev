@@ -5,6 +5,7 @@ WORKDIR /app
 COPY package.json .
 RUN npm install
 
+# Don't necessary, if remove compose it will continue to work
 COPY . .
 
 CMD ["npm", "run", "start"]
